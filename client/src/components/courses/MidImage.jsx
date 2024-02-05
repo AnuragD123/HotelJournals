@@ -14,7 +14,7 @@ import LeftSidebar from './LeftSidebar';
 const MidImage = () => {
     return (
         <div className={CSS.mainContainer}>
-            <LeftSidebar />
+            {/* <LeftSidebar /> */}
             {/* <div className={`${CSS.sidebar} ${CSS.sidebarClosed}`}>
                 <div className='ml-2 pb-3'>
                     <div className='d-flex justify-content-between'>

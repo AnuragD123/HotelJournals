@@ -27,3 +27,24 @@
     color: #C36C68;
     border: 3px solid #C36C68;
 } */
+
+.cardContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem;
+}
+@media (max-width:1200px) {
+    .cardContainer{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width:991px) {
+    .cardContainer{
+        grid-template-columns: 1fr ;
+    }
+}
+@media (max-width:777px) {
+    .filterBox{
+        display: none;
+    }
+}

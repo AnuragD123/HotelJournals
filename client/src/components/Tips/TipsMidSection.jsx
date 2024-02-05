@@ -39,7 +39,7 @@ const TipsMidSection = () => {
         <div className='container flex flex-wrap justify-center gap-4 mb-4 mt-5 pt-3'>
             <div className="card-deck d-flex flex-wrap justify-content-md-start justify-content-sm-center" style={{}}>
                 {AllTips?.result?.map((tip, index) => (
-                    <div className="card m-2 " style={{flex: '0 0 30%',border:'1px solid #E4B49D', minWidth:'300px'}} key={tip._id}>
+                    <div className="card m-2 " style={{flex: '0 0 30%',border:'1px solid #E4B49D', minWidth:'300px',width:'350px!important'}} key={tip._id}>
                         <img className="card-img-top " src={`${serverURL + tip.image}`} alt="Card image cap" style={imgStyleTipsSection} />
                         <div className="card-body">
                             <h5 className="card-title text-center">{tip.title}</h5>
