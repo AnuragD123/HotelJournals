@@ -1,14 +1,8 @@
 import React from 'react';
-import { FaTimes } from 'react-icons/fa';
-
-import course_heading from '../../assets/img/course_heading.jpg';
-import CheckBox from './CheckBox';
 import Cards from './Cards';
-
 import CSS from './MidImage.module.css';
 import SearchBar from './SearchBar';
 import { Flex } from '@chakra-ui/react';
-import LeftSidebar from './LeftSidebar';
 
 
 const MidImage = () => {

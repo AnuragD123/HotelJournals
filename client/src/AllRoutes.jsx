@@ -15,6 +15,7 @@ import UpdateTips from './components/admin/AdminTips/UpdateTips';
 import Courses from './components/courses/Courses';
 import CreateCourse from './components/admin/AdminCourses/CreateCourse';
 import CourseDescription from './components/courses/CourseDescription';
+import Jobs from './components/Jobs/Jobs';
 
 
 const AllRoutes = () => {
@@ -29,6 +30,8 @@ const AllRoutes = () => {
             <Route path='/profile/:id' element={<UserProfile/>} > </Route>
             <Route path='/admintips' element={<AdminTips/>} > </Route>
             <Route path='/courses' element= {<Courses /> } > </Route>
+            <Route path='/jobs' element= {<Jobs /> } > </Route>
+
 
             {/* Admin Routes  */}
                     {/*  For Tips */}

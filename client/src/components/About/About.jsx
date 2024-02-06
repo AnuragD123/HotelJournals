@@ -6,19 +6,20 @@ import CSS from '../About/About.module.css';
 import FindJobs from '../landingPage/FindJobs';
 import ImageGallery from './ImageGallery';
 
+
+
 const About = () => {
   return (
     <div>
       <div className='container'>
+
         {/* Section 1 Start */}
-        <div>
-          <div className='col'>
-            <div className='row'>
-              <div className={CSS.smallHeading}>
-                SE EL CAMBIO
-              </div>
+        <div className='row'>
+          <div className='col-md-12'>
+            <div className={`${CSS.smallHeading}`}>
+              SE EL CAMBIO
             </div>
-            <div className={`row mt-4 ${CSS.bigHeading} `}>
+            <div className={`mt-4 ${CSS.bigHeading}`}>
               Presumir de tu trabajo crea un camino de éxito que inspira a otros a seguir tus pasos
             </div>
           </div>
@@ -26,39 +27,41 @@ const About = () => {
         {/* Section 1 End */}
 
         {/* Section 2 Start */}
-        <div>
-          <FindJobs />
+        <div className='row mt-4'>
+          <div className='col-md-12'>
+            <FindJobs />
+          </div>
         </div>
         {/* Section 2 End */}
 
         {/* Section 3 Start */}
-        <div className='container mt-5 pt-5 pb-5 mb-5'>
-          <p className={`${CSS.bigHeading}`}> Y tu, ¿Presumes de tu trabajo? </p>
+        <div className='row mt-5 pt-5 pb-5 mb-5'>
+          <div className='col-md-12'>
+            <p className={`${CSS.bigHeading}`}> Y tu, ¿Presumes de tu trabajo? </p>
+          </div>
         </div>
         {/* Section 3 End */}
 
         {/* Section 4 Start */}
-        <div className='container-fluid mt-5 mb-2 text-white' style={{ background: '#363434', paddingTop: '5rem', paddingBottom: '4rem' }}>
-          <div className='row'>
-            <div className='col '>
-              <p className={`${CSS.blackbgHeading} `}>  Lo que busco   </p>
-            </div>
-            <div className='col'>
-              <div className='row '>
-                <ul style={{ listStyleType: 'none', paddingLeft: '3rem' }} >
-                  <li> Un sector más justo </li>
-                  <li> Mejora de las condiciones  </li>
-                  <li> Cambios en el sector </li>
-                  <li> Oportunidades de estudio  </li>
-                </ul>
+        <div className='row mt-5 mb-2 text-white' style={{ background: '#363434', paddingTop: '5rem', paddingBottom: '4rem' }}>
+          <div className='col-md-6'>
+            <p className={`${CSS.blackbgHeading} `}>  Lo que busco   </p>
+          </div>
+          <div className='col-md-6'>
+            <div className='row '>
+              <ul className='col-md-6' style={{ listStyleType: 'none', paddingLeft: '3rem' }} >
+                <li> Un sector más justo </li>
+                <li> Mejora de las condiciones  </li>
+                <li> Cambios en el sector </li>
+                <li> Oportunidades de estudio  </li>
+              </ul>
 
-                <ul style={{ listStyleType: 'none', paddingLeft: '7rem' }} >
-                  <li> Un sector más unido </li>
-                  <li> Igualdad   </li>
-                  <li> Equilibrio  </li>
-                  <li> Orgullo  </li>
-                </ul>
-              </div>
+              <ul className='col-md-6' style={{ listStyleType: 'none', paddingLeft: '7rem' }} >
+                <li> Un sector más unido </li>
+                <li> Igualdad   </li>
+                <li> Equilibrio  </li>
+                <li> Orgullo  </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -91,11 +94,18 @@ const About = () => {
         {/* Section 5 End */}
 
         {/* Section 6 Start */}
-        <ImageGallery />
+        <div className='row'>
+          <div className='col-md-12'>
+            <ImageGallery />
+          </div>
+        </div>
         {/* Section 6 End */}
+
       </div>
     </div>
   );
 };
 
 export default About;
+
+

@@ -3,9 +3,8 @@ import { IoMdTime } from 'react-icons/io';
 import { FaArrowUpRightDots } from 'react-icons/fa6';
 import { useDispatch, useSelector } from 'react-redux';
 import { GetCourse } from '../../redux/actions/courseAdmin';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import CheckBox from "./CheckBox";
-// import { grid } from '@chakra-ui/react';
 import CSS from './Cards.module.css';
 
 const cardImageStyle = {
@@ -94,11 +93,11 @@ const Cards = () => {
                                                 <FaArrowUpRightDots /> <small> {course.difficulty} </small>
                                             </p>
                                         </div>
-                                        <NavLink to={`/courses/${course._id}`} target="_blank">
+                                        <Link to={`/courses/${course._id}`} >
                                             <button className=" btn w-100" style={{ background: '#E4B49D', fontWeight: 600 }}>
                                                 Enroll Now
                                             </button>
-                                        </NavLink>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

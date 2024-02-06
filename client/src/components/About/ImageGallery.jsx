@@ -30,8 +30,8 @@ const items = [
   ];
 
 const responsive = {
-  0: { items: 4 },
-  568: { items: 4 },
+  0: { items: 3 },
+  568: { items: 3 },
   1024: { items: 4 },
 };
 
