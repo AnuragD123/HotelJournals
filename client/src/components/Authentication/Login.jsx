@@ -230,7 +230,7 @@ const Login = () => {
                                     onChange={(e) =>
                                         setPassword(e.target.value)
                                     }
-                                    style={{ width: '48% !important' }}
+                                    style={{ width: '100%' }}
                                 />
                                 <label>Password</label>
                             </div>
