@@ -275,6 +275,16 @@
     }
 }
 
+@media screen and (max-width: 957px){
+    .header .avatars-small {
+        margin: auto;
+    }
+    .header .title {
+        text-align: center;
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 768px) {
 
     .container {
@@ -284,17 +294,14 @@
         /* border: 2px solid red; */
         overflow: hidden;
     }
-    .header .title{
-       
+    /* .header .title{
         text-align: center;
         width: 100%;
-
-        
     }
     .header .avatars-small{
     
         margin: auto;
-    }
+    } */
     .header .avatars-small img{
        
         margin: auto;
