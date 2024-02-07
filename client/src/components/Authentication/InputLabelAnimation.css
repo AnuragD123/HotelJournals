@@ -1,14 +1,18 @@
+::-webkit-scrollbar{
+    width: 0px;
+}
+
 .input-field {
     position: relative;
 }
 .input-field input {
     /* width: 24vw; */
-    height: 50px; 
+    height: 45px; 
     /* margin: 0px 5px; */
-    border-radius: 6px;
-    font-size: 18px;
+    border-radius: 8px;
+    font-size: 14px;
     padding: 0 15px;
-    border: 1px solid rgba(117, 122, 125, 0.45);
+    border: 1px solid rgba(154, 158, 161, 0.45);
     background: transparent;
     color: #ff7f6eff;
     outline: none;
@@ -36,22 +40,47 @@ input:valid ~ label {
 }
 .signup{
     margin-top: 50px!important ;
-    width: 100% !important;
+    width: 60% ;
     height: auto;
-    
-}
-.signup-center-box{
-    /* height: 90vh; */
-    width: 80%;
-    box-shadow: 10px 10px 71px 6px rgba(255,127,110,0.52);
-    border-radius: 20px;
     margin: auto;
     
 }
+.signup-center-box{
+    height: 80vh;
+    width: 100%;
+    box-shadow: 10px 10px 71px 6px rgba(255,127,110,0.52);
+    border-radius: 20px;
+    margin: auto;  
+    position: relative;
+}
+.LogoImg{
+    margin: 1rem;
+    height: 1.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.googleicon{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    font-size: 25px;
+    transform: translate(0, -50%);
+
+}
+.curousel_box{
+    width: 35%;
+    height: 100%;
+    background-color: #fbbfb7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px 12px 40px 12px;
+}
 .box-form{
-    width: 100% !important;
-    margin: 0;
-    
+    width: 65%;
+    height: 100%;
+    overflow-y: scroll;
     
 }
 .box-form form{
@@ -110,54 +139,44 @@ input:valid ~ label {
 } */
 
 
-
-@media only screen and (min-width: 768px) and (max-width: 1024px){
-    .signup-center-box{
-        width: 738px !important;
-        
+@media (max-width: 1250px){
+    .signup{
+       width: 70%; 
     }
 }
-@media only screen and (max-width: 768px) {
-    .signup-center-box{
-        max-width: 500px;
-        margin: 0 auto;
+@media (max-width: 900px){
+    .signup{
+       width: 90%;
         
-    
     }
+    .curousel_box{
+        width: 40%;
+    }
+    .box-form{
+        width: 60%;
+    }
+}
 
-    .box-carousel{
+@media (max-width: 670px){
+    .LogoImg{
+        position: relative;
+        height: 2rem;
+    }
+    .curousel_box{
         display: none;
     }
     .box-form{
-        width: 100% !important;
-        margin: 0;
-        
+        width: 100%;
+        justify-content: flex-start !important;
     }
-    .box-form .name-container{
-        justify-content: space-between !important;
-        
-    }
-
-
-    /* .box-form .input-field{
-        width: 100% !important;
-    }
-    .box-form .input-field input{
-        width: 100% !important;
-    } */
 }
-/* @media only screen and (max-width: 1200px) {
-    .box-carousel{
-        display: none;
-        background-color: blue !important;
-        border: #ff7f6eff !important;
-        border-width: 10px;
+
+@media (max-width: 300px){
+    .flexButton button{
+        font-size: 12px;
     }
-    .signup-center-box{
-        box-shadow: 10px 10px 71px 6px rgba(255, 127, 110, 0);
-    }
-    .form-signup{
-        position: relative;
-        top: 100px;;
-    }
-} */
+}
+
+
+
+

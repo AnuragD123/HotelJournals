@@ -16,7 +16,7 @@
 
 //     const messagebackend = useSelector((state) => (state.authReducer.message));
 //     console.log("I am from signup "+ messagebackend);
-    
+
 //     const [firstName, SetFirstName] = useState('');
 //     const [lastName, SetLastName] = useState('');
 //     const [user_type, SetUserType] = useState(''); // [candidate, recruiter, organizer]
@@ -197,7 +197,7 @@
 //     const handleSubmit = (e) => {
 //         e.preventDefault();
 //         setLoading(true);
-        
+
 //         if(!email || !password){
 //             toast.error('Please fill all the fields');
 //             setLoading(false);
@@ -205,7 +205,7 @@
 //         }
 //         console.log(email, password);
 //         dispatch(login({email,password},navigate));    
-        
+
 //         // setLoading(false);
 
 //         if(!loading && messagebackend){
@@ -331,13 +331,15 @@ const Signup = () => {
                 justifyContent={'center'}
                 className="signup-center-box"
             >
-                <Carousel />
+                <div className='curousel_box'>
+                    <Carousel />
+                </div>
                 <Flex
                     className='box-form'
                     direction="column"
                     align="center"
                     justify="center"
-                    // width={{ base: '50%', md: '50%',lg:"100%" }}
+                // width={{ base: '50%', md: '50%',lg:"100%" }}
                 >
                     <form
                         onSubmit={handleSubmit}
@@ -348,7 +350,7 @@ const Signup = () => {
                         }}
                     >
                         <Img
-                            style={{ height: '3rem', margin: '1.2rem' }}
+                        className='LogoImg'
                             src={Unstop}
                             alt="unstopablePhoto"
                         />
@@ -359,15 +361,16 @@ const Signup = () => {
                             }}
                             className="text"
                         >
-                            <h6 style={{ marginLeft: '2%' }}>
+                            <h6 style={{ marginLeft: '2%', fontSize: "12px" }}>
                                 Ready to Be Unstopable!
                             </h6>
-                            <h3>👋 Create an account</h3>
-                            <h5 style={{ marginLeft: '2%' }}> 
+                            <h3 style={{ fontSize: "18px" }}>👋 Create an account</h3>
+                            <h5 style={{ marginLeft: '2%', fontSize: "14px" }}>
                                 Create account as a
                             </h5>
                         </div>
                         <Flex
+                            className='flexButton'
                             justifyContent="center"
                             alignItems="center"
                             flexDirection={{ base: 'row', md: 'row' }} // Stack on small screens, align horizontally on medium and larger screens
@@ -379,37 +382,40 @@ const Signup = () => {
                                 borderColor="#ff7f6eff"
                                 color="#000"
                                 size="lg"
+                                fontSize="15px"
                                 p={{ base: '1rem', md: '1.5rem' }} // Add padding to button}
                                 w={{ base: '100%', md: 'auto' }} // Full width on small screens, auto width on medium and larger screens
-                                mb={{ base: '1rem', md: 0 }} // Add bottom margin on small screens
+                                mb={{ base: '0.5rem', md: 0 }} // Add bottom margin on small screens
                             >
                                 Candidate
                             </Button>
                             <Button
                                 variant="outline"
                                 borderColor="#ff7f6eff"
-                                p={{ base: '1rem', md: '1.5rem' }} // Add padding to button}
+                                fontSize="15px"
+                                py={{ base: '1rem', md: '1.5rem' }} // Add padding to button}
                                 color="#000"
                                 size="lg"
                                 w={{ base: '100%', md: 'auto' }}
-                                mb={{ base: '1rem', md: 0 }}
+                                mb={{ base: '0.5rem', md: 0 }}
                             >
                                 Recruiter
                             </Button>
                             <Button
                                 variant="outline"
                                 borderColor="#ff7f6eff"
+                                fontSize="15px"
                                 p={{ base: '1rem', md: '1.5rem' }} // Add padding to button}
                                 color="#000"
                                 size="lg"
                                 w={{ base: '100%', md: 'auto' }}
-                                mb={{ base: '1rem', md: 0 }}
+                                mb={{ base: '0.5rem', md: 0 }}
                             >
                                 Organiser
                             </Button>
                         </Flex>
-                        <br />
-                        <br />
+                        {/* <br />
+                        <br /> */}
                         <div className='form-fields'>
                             <Flex className='name-container'>
                                 <div class="input-field">
@@ -469,7 +475,7 @@ const Signup = () => {
                                 />
                                 <label>Phone</label>
                             </div>
-                            <Flex style={{width:'100%'}} className='password-container'>
+                            <Flex style={{ width: '100%' }} className='password-container'>
                                 <div class="input-field">
                                     <input
                                         type="text"
@@ -479,7 +485,7 @@ const Signup = () => {
                                         onChange={(e) =>
                                             setPassword(e.target.value)
                                         }
-                                        style={{width:'48% !important'}}
+                                        style={{ width: '48% !important' }}
                                     />
                                     <label>Password</label>
                                 </div>
@@ -489,7 +495,7 @@ const Signup = () => {
                                         required
                                         spellCheck="false"
                                         autoComplete="off"
-                                        style={{width:'48% !important'}}
+                                        style={{ width: '48% !important' }}
                                     />
                                     <label>Confirm Password</label>
                                 </div>
@@ -522,7 +528,7 @@ const Signup = () => {
                     </form>
                 </Flex>
             </Flex>
-        </div>
+        </div >
     );
 };
 
