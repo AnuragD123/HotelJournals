@@ -10,6 +10,8 @@ import arrowIcon from '../../assets/img/Jobs_img/arrow.svg';
 import searchIcon from '../../assets/img/Jobs_img/search.svg';
 import './jobspage.css';
 
+import JobCard from './JobCard'
+
 const Jobs = () => {
     return (
         <>
@@ -63,12 +65,12 @@ const Jobs = () => {
                             <h2 className="demandingJob">High Demanding Job</h2>
                             <h2 className="cat">Categories</h2>
                         </div>
-                        
+
                         <button className="button">
                             Explore All Categories
-                            <img className="arrow" style={{display:'inline'}} src={arrowIcon} alt="arrow" />
+                            <img className="arrow" style={{ display: 'inline' }} src={arrowIcon} alt="arrow" />
                         </button>
-                       
+
                     </div>
                     <div className="catagories">
                         <div className="catagory">
@@ -121,6 +123,16 @@ const Jobs = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+
+            {/* New Job Opportunities section */}
+
+            <div className="container">
+
+                <div className="row">
+                    <JobCard/>
+                </div>
+              
             </div>
 
         </>
