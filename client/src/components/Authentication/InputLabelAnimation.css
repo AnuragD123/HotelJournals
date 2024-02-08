@@ -46,7 +46,7 @@ input:valid ~ label {
     
 }
 .signup-center-box{
-    height: 80vh;
+    height: 70vh;
     width: 100%;
     box-shadow: 10px 10px 71px 6px rgba(255,127,110,0.52);
     border-radius: 20px;
@@ -137,12 +137,16 @@ input:valid ~ label {
     width: 100% !important;
     margin: 5px;
 } */
-
+.box-form{
+    width: 100%;
+    justify-content: flex-start !important;
+}
 
 @media (max-width: 1250px){
     .signup{
        width: 70%; 
     }
+    
 }
 @media (max-width: 900px){
     .signup{
@@ -157,6 +161,7 @@ input:valid ~ label {
     }
 }
 
+
 @media (max-width: 670px){
     .LogoImg{
         position: relative;
@@ -165,10 +170,10 @@ input:valid ~ label {
     .curousel_box{
         display: none;
     }
-    .box-form{
-        width: 100%;
-        justify-content: flex-start !important;
+    .signup-center-box{
+        height: 90vh;
     }
+   
 }
 
 @media (max-width: 300px){
