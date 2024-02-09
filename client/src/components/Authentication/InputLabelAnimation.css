@@ -141,6 +141,10 @@ input:valid ~ label {
     width: 100%;
     justify-content: flex-start !important;
 }
+.googlebutton__text{
+    font-size: 15px;
+    margin: 0;
+}
 
 @media (max-width: 1250px){
     .signup{
@@ -173,7 +177,20 @@ input:valid ~ label {
     .signup-center-box{
         height: 90vh;
     }
-   
+    .box-form{
+        width: 80%;
+    }
+}
+@media (max-width: 400px){
+    .box-form{
+        width: 92%;
+    }
+    .input-field label{
+        font-size: 15px;
+    }
+    .googlebutton__text{
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 300px){

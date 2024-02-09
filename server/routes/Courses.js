@@ -5,10 +5,10 @@ import { AllCourseData, CoursesAdmin, DeleteCourse, SingleCourseData, editCourse
 const router = express.Router();
 
 // Add a new Course
-router.post('/newCourse',CoursesAdmin)
-router.get('/allCourses',AllCourseData) 
-router.get('/singleCourse/:id',SingleCourseData)
-router.delete('/singleCourse/:id',DeleteCourse)
-router.patch('/singleCourse/:id',editCourse)
+router.post('/newCourse', CoursesAdmin)
+router.get('/allCourses', AllCourseData)
+router.get('/singleCourse/:id', SingleCourseData)
+router.delete('/singleCourse/:id', DeleteCourse)
+router.patch('/singleCourse/:id', editCourse)
 
 export default router;

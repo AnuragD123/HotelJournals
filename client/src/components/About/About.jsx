@@ -35,7 +35,7 @@ const About = () => {
         {/* Section 2 End */}
 
         {/* Section 3 Start */}
-        <div className='row mt-5 pt-5 pb-5 mb-5'>
+        <div className='row mt-5  mb-5'>
           <div className='col-md-12'>
             <p className={`${CSS.bigHeading}`}> Y tu, ¿Presumes de tu trabajo? </p>
           </div>
@@ -43,7 +43,28 @@ const About = () => {
         {/* Section 3 End */}
 
         {/* Section 4 Start */}
-        <div className='row mt-5 mb-2 text-white' style={{ background: '#363434', paddingTop: '5rem', paddingBottom: '4rem' }}>
+        <div className={`d-flex flex-wrap justify-content-around text-white p-5 ${CSS.A_s1b}`} >
+          <div className=''>
+            <p className={`${CSS.blackbgHeading} `}>Lo que busco</p>
+          </div>
+          <div className={`d-flex flex-wrap justify-content-around text-white ${CSS.A_s2b}`} >
+            <ul className='' style={{ listStyleType: 'none' }}>
+              <li> Un sector más justo </li>
+              <li> Mejora de las condiciones  </li>
+              <li> Cambios en el sector </li>
+              <li> Oportunidades de estudio  </li>
+            </ul>
+
+            <ul className='' style={{ listStyleType: 'none' }}>
+              <li> Un sector más unido </li>
+              <li> Igualdad   </li>
+              <li> Equilibrio  </li>
+              <li> Orgullo  </li>
+            </ul>
+          </div>
+
+        </div>
+        {/* <div className='row mt-5 mb-2 text-white' style={{ background: '#363434', paddingTop: '5rem', paddingBottom: '4rem' }}>
           <div className='col-md-6'>
             <p className={`${CSS.blackbgHeading} `}>  Lo que busco   </p>
           </div>
@@ -64,7 +85,7 @@ const About = () => {
               </ul>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* Section 4 End */}
 
         {/* Section 5 Start */}
