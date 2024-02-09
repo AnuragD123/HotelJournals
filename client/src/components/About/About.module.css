@@ -8,11 +8,35 @@
     text-align: center;
     width: 100%;
 }
+.A_s1b{
+  gap: 10px;
+  align-items: center;
+  background: #363434;
+}
+.A_s2b{
+  width: 50%;
+  align-items: center;
+}
 
+@media (max-width: 950px) {
+  .A_s1b {
+      flex-direction: column;
+  }
+  .A_s2b{
+    width: 90%;
+  }
+}
 /* For small screens, use smaller font size */
 @media (max-width: 576px) {
     .smallHeading {
         font-size: 1.2rem;
+    }
+    .A_s1b{
+      align-items: flex-start;
+    }
+    .A_s2b{
+      flex-direction: column;
+      align-items: flex-start;
     }
 }
 
@@ -20,10 +44,10 @@
     font-size: 3.35rem;
     font-weight: lighter;
     font-family: system-ui;
-    text-align: center;
     width: 100%;
     text-transform: uppercase;
 }
+
 
 /* For small screens, use smaller font size */
 @media (max-width: 576px) {
@@ -36,7 +60,7 @@
     font-size: 4rem;
     font-weight: lighter;
     font-family: system-ui;
-    text-align: right;
+
     width: 100%;
 }
 
@@ -44,7 +68,7 @@
 @media (max-width: 576px) {
     .blackbgHeading {
         font-size: 3rem;
-        text-align: center;
+       
     }
 }
 

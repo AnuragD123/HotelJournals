@@ -45,7 +45,7 @@ const SearchBar = () => {
 
                     {/* Search button  */}
                     <Flex>
-                        <div className='mt-4 ml-3 pt-3 flex-grow-1'>
+                        <div className='mt-4 pt-3 flex-grow-1'>
                             <button className={`${CSS.btnP} mr-2`} ><Flex align="center" justify="center"><CiSearch size={25} />Find Jobs</Flex>  </button>
                             {
                                 isOpen ? <LeftSidebar onClose={onClose} /> :

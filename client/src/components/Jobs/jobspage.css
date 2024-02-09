@@ -128,7 +128,7 @@
     display: grid;
     width: 85%;
     margin: auto;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px;
 }
 
@@ -155,6 +155,8 @@
     border: none;
     background-color: white;
 }
+
+
 
 .catagories .catagory img {
     margin-top: 5px;
@@ -230,6 +232,19 @@
 }
 .catagory:hover img{
     filter: brightness(0) invert(1);
+}
+
+.jobsCompany__detail{
+    background-color: #7954ff;
+    padding: 20px;
+}
+.jobdetail__Number{
+    font-size: 25px;
+    font-weight:900
+}
+.jobdetail__heading{
+    font-size: 18px;
+    font-weight:500   
 }
 @media screen and (max-width: 1200px) {
     .header .avatars img {
@@ -312,7 +327,9 @@
         padding: 10px;
        
     }
-
+    .catagories{
+        width: 100%;
+    }
     .card-heading{
         display: flex;
         flex-direction: column;
@@ -330,6 +347,12 @@
     .scrolling-logos .logos img{
         margin-left: 20px;
         /* width: 20vw; */
+    }
+    .jobdetail__Number{
+        font-size: 20px;
+    }
+    .jobdetail__heading{
+        font-size: 15px;
     }
 }
 
@@ -352,3 +375,8 @@
 .radio-item {
     margin-left: 2vw;
 }
+
+/* .jobCard__box{
+    display: flex;
+    gap: 12px;
+} */

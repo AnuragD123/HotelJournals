@@ -128,12 +128,47 @@ const Jobs = () => {
             {/* New Job Opportunities section */}
 
             <div className="container">
-
-                <div className="row">
-                    <JobCard/>
+                <div className="row catagories">
+                    <JobCard />
+                    <JobCard />
+                    <JobCard />
+                    <JobCard />
+                    <JobCard />
+                    <JobCard />
+                    <JobCard />
+                    <JobCard />
+                    <JobCard />
+                    <JobCard />
+                    <JobCard />
+                    <JobCard />
                 </div>
-              
             </div>
+
+            <div className='container'>
+                <div >
+                    <h3 className="text-center my-5" style={{ fontWeight: "900" }}>Find your need with jobfi</h3>
+                    <div className="d-flex flex-wrap align-items-center justify-content-around jobsCompany__detail" style={{ gap: "12px" }}>
+                        <span className="d-flex flex-column align-items-center justify-content-center text-light text-center">
+                            <p className='m-0 jobdetail__Number'>20k+</p>
+                            <p className='m-0 jobdetail__heading'>Dummy text</p>
+                        </span>
+                        <span className="d-flex flex-column align-items-center justify-content-center text-light text-center">
+                            <p className='m-0 jobdetail__Number'>60+</p>
+                            <p className='m-0 jobdetail__heading'>Dummy text</p>
+                        </span>
+                        <span className="d-flex flex-column align-items-center justify-content-center text-light text-center">
+                            <p className='m-0 jobdetail__Number'>40k+</p>
+                            <p className='m-0 jobdetail__heading'>Dummy text</p>
+                        </span>
+                        <span className="d-flex flex-column align-items-center justify-content-center text-light text-center">
+                            <p className='m-0 jobdetail__Number'>98%+</p>
+                            <p className='m-0 jobdetail__heading'>Dummy text</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
 
         </>
 

@@ -198,13 +198,15 @@ const Login = () => {
                             borderColor="#ff7f6eff"
                             color="#000"
                             size="lg"
-                            fontSize="15px"
                             p={{ base: '1rem', md: '1.5rem' }} // Add padding to button}
                             w={{ base: '100%', md: 'auto' }} // Full width on small screens, auto width on medium and larger screens
                             mb={{ base: '0.5rem', md: 0 }} // Add bottom margin on small screens
                         >
                             <FcGoogle className='googleicon' />
-                            Continue with Google
+                            <p className='googlebutton__text'>
+                                Continue with Google
+                            </p>
+
                         </Button>
 
                         <div className='form-fields'>

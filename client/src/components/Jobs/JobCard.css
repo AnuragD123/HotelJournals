@@ -4,7 +4,7 @@
 .job-card{
     border: 1px solid grey !important;
     border-radius: 5px !important;
-    max-width: 250px !important;
+    /* max-width: 300px !important; */
     font-family: 'Inter', sans-serif !important;
     min-height: 250px !important;
     box-sizing: border-box !important;
@@ -27,11 +27,15 @@
     justify-content: space-between !important;
     margin-bottom: 10px !important;
 }
+.job-card .head .head_box{
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+}
+
 
 .job-card .head svg {
-    width: 15px !important;
-    /* Border color */
-    /* Remove filled color */
+    width: 20px !important;
 }
 
 .job-card .head svg:hover {
@@ -41,8 +45,8 @@
 }
 
 .job-card .employer-logo {
-    width: 45px !important;
-    height: 45px !important;
+    width: 50px !important;
+    height: 55px !important;
     background-color: rgb(183, 193, 241) !important;
     display: flex !important;
     align-items: center !important;
@@ -52,8 +56,8 @@
 .job-card .like-button {
     background-color: rgb(183, 193, 241) !important;
     padding: 5px !important;
-    height: 30px !important;
-    width: 30px !important;
+    height: 45px !important;
+    width: 45px !important;
     border-radius: 50% !important;
     display: flex !important;
     align-items: center !important;
@@ -86,9 +90,9 @@
     font-size: 14px !important;
 }
 
-.organization {
+/* .organization {
     width: 55% !important;
-}
+} */
 
 .organization small {
     font-size: 12px !important;
@@ -114,4 +118,10 @@
 
 .job-card .cfooter .cbutton:hover {
     background-color: rgb(90, 68, 168) !important;
+}
+
+@media screen and (max-width: 500px){
+    .card-body{
+        padding: 0;
+    }
 }
