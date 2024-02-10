@@ -42,28 +42,8 @@ const About = () => {
         </div>
         {/* Section 3 End */}
 
+      </div>
         {/* Section 4 Start */}
-        <div className={`d-flex flex-wrap justify-content-around text-white p-5 ${CSS.A_s1b}`} >
-          <div className=''>
-            <p className={`${CSS.blackbgHeading} `}>Lo que busco</p>
-          </div>
-          <div className={`d-flex flex-wrap justify-content-around text-white ${CSS.A_s2b}`} >
-            <ul className='' style={{ listStyleType: 'none' }}>
-              <li> Un sector más justo </li>
-              <li> Mejora de las condiciones  </li>
-              <li> Cambios en el sector </li>
-              <li> Oportunidades de estudio  </li>
-            </ul>
-
-            <ul className='' style={{ listStyleType: 'none' }}>
-              <li> Un sector más unido </li>
-              <li> Igualdad   </li>
-              <li> Equilibrio  </li>
-              <li> Orgullo  </li>
-            </ul>
-          </div>
-
-        </div>
         {/* <div className='row mt-5 mb-2 text-white' style={{ background: '#363434', paddingTop: '5rem', paddingBottom: '4rem' }}>
           <div className='col-md-6'>
             <p className={`${CSS.blackbgHeading} `}>  Lo que busco   </p>
@@ -115,6 +95,29 @@ const About = () => {
         {/* Section 5 End */}
 
         {/* Section 6 Start */}
+        <div className={`d-flex flex-wrap justify-content-around text-white p-5 ${CSS.A_s1b}`} >
+          <div className=''>
+            <p className={`${CSS.blackbgHeading} `}>Lo que busco</p>
+          </div>
+          <div className={`d-flex flex-wrap justify-content-around text-white ${CSS.A_s2b}`} >
+            <ul className='' style={{ listStyleType: 'none' }}>
+              <li> Un sector más justo </li>
+              <li> Mejora de las condiciones  </li>
+              <li> Cambios en el sector </li>
+              <li> Oportunidades de estudio  </li>
+            </ul>
+
+            <ul className='' style={{ listStyleType: 'none' }}>
+              <li> Un sector más unido </li>
+              <li> Igualdad   </li>
+              <li> Equilibrio  </li>
+              <li> Orgullo  </li>
+            </ul>
+          </div>
+
+        </div>
+
+    <div className='container'>
         <div className='row'>
           <div className='col-md-12'>
             <ImageGallery />
