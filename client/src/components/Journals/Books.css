@@ -28,7 +28,7 @@
         width: 100%;
         flex-direction: column;
         margin: auto !important;
-        border: 2px solid yellow;
+        /* border: 2px solid yellow; */
         box-sizing: border-box;
     }
     .top-books-container {
@@ -40,7 +40,7 @@
 
     }
     .book-card{
-        border: 2px solid red;
+        /* border: 2px solid red; */
         width: 100% !important;
         height: auto;
         margin-top: 10px;
@@ -51,7 +51,7 @@
     }
     .main-row-featured-books{
         flex-direction: column-reverse;
-        border: 2px solid red;
+        /* border: 2px solid red; */
         align-items: center;
         width: 100%!important;
         margin: auto;
@@ -59,7 +59,7 @@
     .featured-books-row{width: 100%;}
     .large-book-col{
         min-width: 100%;
-        border: 2px solid green;
+        /* border: 2px solid green; */
         width: 100%;
         display: block;
         margin: auto;
@@ -72,16 +72,16 @@
 
 
 /* for wider screens */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width:800px) {
     .featured-books-row{
         flex-direction: row;
-        border: 2px solid red;
+        /* border: 2px solid red; */
     }
     
     .featured-books-row .book-card{
         /* min-width: 400px; */
         /* max-width: 365px; */
-        border: 2px solid green;
+        /* border: 2px solid green; */
 
         margin: 10px 8px;
     }
@@ -96,7 +96,7 @@
             max-width: 100%;
             flex-grow: 1;
             overflow: hidden;
-            border: 2px solid blue;
+            /* border: 2px solid blue; */
         
     }
     .large-book-image{
@@ -106,3 +106,4 @@
         display: block;
     }
 }
+
