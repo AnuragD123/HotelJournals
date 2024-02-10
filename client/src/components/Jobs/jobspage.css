@@ -218,13 +218,10 @@
 }
 
 .catagories .catagory:hover {
-    background-color: var(--main-theme-color);
+    background-color: #E4B49D;
     color: white!important;
 }
 
-.catagory:hover {
-    background-color: blue;
-}
 
 .catagory:hover h3,
 .catagory:hover p {

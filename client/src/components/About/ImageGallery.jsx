@@ -29,12 +29,11 @@ const items = [
     <img src={image6} alt='author_image6' onDragStart={handleDragStart} role="presentation" style={imageStyle} />,
   ];
 
-const responsive = {
-  0: { items: 3 },
-  568: { items: 3 },
-  1024: { items: 4 },
-};
-
+  const responsive = {
+    0: { items: 2, stagePadding: { paddingLeft: 10, paddingRight: 10 } }, // Adjust the padding values as needed
+    568: { items: 3 },
+    1024: { items: 4 },
+  };
 const ImageGallery = () => {
   return (
     <div className='container mt-5'>
