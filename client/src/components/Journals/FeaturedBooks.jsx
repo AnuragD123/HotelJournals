@@ -17,7 +17,7 @@ const bookStyleTopBooks = {
 
 const FeaturedBooks = () => {
     return (
-        <div className='container'>
+        <div className='container' style={{ maxWidth: "90%" }}>
             <div className='pt-4 ml-5 featured-books-container'>
                 <h3> Featured Books </h3>
                 <hr className='' style={{ border: '2px solid black', width: '10vw', }} />
@@ -30,11 +30,11 @@ const FeaturedBooks = () => {
                     <div className='col-md-8 col-sm-12'>
 
                         {/* sub row for featured books */}
-                        <div className="row featured-books-row">{/* row start */}
+                        <div className="row featured-books-row align-items-center justify-content-around">{/* row start */}
                             {/* card 1 start */}
-                            <div className='mb-4 book-card' style={{ display:"flex",}}>
-                                <img src={book4} className='img-responsive'  alt="book1" style={bookStyleTopBooks} />
-                                <div className='pt-4' style={{ textAlign: 'left',  paddingLeft:'1vw'}}>
+                            <div className='mb-4 book-card' style={{ display: "flex", }}>
+                                <img src={book4} className='img-responsive' alt="book1" style={bookStyleTopBooks} />
+                                <div className='pt-4' style={{ textAlign: 'left', paddingLeft: '1vw' }}>
                                     <h5>Creador</h5>
                                     <div>
                                         <i className="fa-regular fa-star" ></i>
@@ -52,9 +52,9 @@ const FeaturedBooks = () => {
                             </div>
 
                             {/* card 2 start */}
-                            <div className='mb-4 book-card' style={{ display:"flex", }}>
+                            <div className='mb-4 book-card' style={{ display: "flex", }}>
                                 <img src={book5} className='img-responsive' alt="book1" style={bookStyleTopBooks} />
-                                <div  className='pt-4' style={{ textAlign: 'left', paddingLeft:'1vw' }}>
+                                <div className='pt-4' style={{ textAlign: 'left', paddingLeft: '1vw' }}>
                                     <h5>Front Office Agenda</h5>
                                     <div>
                                         <i className="fa-regular fa-star" ></i>
@@ -72,9 +72,9 @@ const FeaturedBooks = () => {
                             </div>
 
                             {/* card 3 start */}
-                            <div className='mb-4 book-card' style={{ display:"flex", }}>
+                            <div className='mb-4 book-card' style={{ display: "flex", }}>
                                 <img src={book6} className='img-responsive' alt="book1" style={bookStyleTopBooks} />
-                                <div  className='pt-4' style={{ textAlign: 'left', paddingLeft:'1vw'}}>
+                                <div className='pt-4' style={{ textAlign: 'left', paddingLeft: '1vw' }}>
                                     <h5>Front Office Agenda</h5>
                                     <div>
                                         <i className="fa-regular fa-star" ></i>
@@ -91,9 +91,9 @@ const FeaturedBooks = () => {
                                 </div>
                             </div>
                             {/* card 4 start */}
-                            <div className='mb-4 book-card'style={{ display:"flex", }}>
+                            <div className='mb-4 book-card' style={{ display: "flex", }}>
                                 <img src={book7} className='img-responsive' alt="book1" style={bookStyleTopBooks} />
-                                <div  className='pt-4' style={{ textAlign: 'left',  paddingLeft:'1vw' }}>
+                                <div className='pt-4' style={{ textAlign: 'left', paddingLeft: '1vw' }}>
                                     <h5>Front Office Agenda</h5>
                                     <div>
                                         <i className="fa-regular fa-star" ></i>
@@ -113,14 +113,14 @@ const FeaturedBooks = () => {
 
                     </div>
 
-                    
+
                     {/* column for large book */}
                     <div className='col-md-3 col-sm-12 large-book-col '>
-                        <div style={{ display:"flex",justifyContent: "flex-start",flexWrap: 'wrap'}}>
+                        <div style={{ display: "flex", justifyContent: "flex-start", flexWrap: 'wrap' }}>
 
                             {/* large book image */}
-                            <img src={bookLarge} className='img-responsive large-book-image' alt="book1" style={{ boxShadow: "rgb(22, 27, 27) 2px 4px 10px",borderRadius: '2%',}} />
-                            <div  className='pt-4'>
+                            <img src={bookLarge} className='img-responsive large-book-image' alt="book1" style={{ boxShadow: "rgb(22, 27, 27) 2px 4px 10px", borderRadius: '2%', }} />
+                            <div className='pt-4'>
                                 <h5>Front Office Agenda</h5>
                                 <div>
                                     <i className="fa-regular fa-star" ></i>
@@ -136,11 +136,11 @@ const FeaturedBooks = () => {
 
                             </div>
                         </div>
-                    </div>            
-                
+                    </div>
 
-                    
-                    
+
+
+
 
 
                 </div>
