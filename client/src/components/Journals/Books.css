@@ -3,8 +3,25 @@
    min-height: 220px;
     
 }
+.jor1_C{
+    max-width: 90%;
+}
+.featured-books-row .book-card{
+    width: 40%;
+}
 
+@media only screen and (max-width: 1400px) {
+    .featured-books-row .book-card{
+        width: 100%;
+    }
+}
 
+@media only screen and (max-width:1000px) {
+    .cabo_s{
+        max-width: 100%!important;
+        flex: auto !important;
+    }
+}
 /* for mobile screens */
 @media only screen  and (max-width: 600px) {
     .featured-books-container{
@@ -52,6 +69,8 @@
 
 }
 
+
+
 /* for wider screens */
 @media only screen and (min-width: 600px) {
     .featured-books-row{
@@ -61,7 +80,7 @@
     
     .featured-books-row .book-card{
         /* min-width: 400px; */
-        max-width: 365px;
+        /* max-width: 365px; */
         border: 2px solid green;
 
         margin: 10px 8px;

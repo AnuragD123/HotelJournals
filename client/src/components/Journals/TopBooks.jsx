@@ -14,7 +14,7 @@ const bookStyleTopBooks = {
 
 const TopBooks = () => {
   return (
-    <div className="container">
+    <div className="container" style={{ maxWidth: "90%" }}>
       <div className='top-books-container pt-4'>
 
         <div className='ml-5 mb-3' >
@@ -24,7 +24,7 @@ const TopBooks = () => {
 
 
         <div className='row pt-5' style={{ marginRight: '' }}>
-          <div className='col-md-4'>
+          <div className='col-md-4 p-2 cabo_s'>
             <div className='book-card' style={{ display: 'flex', justifyContent: 'center' }}>
               <img src={book2} className='img-responsive' alt="book1" style={bookStyleTopBooks} />
               <div style={{ textAlign: 'left', padding: '1vw', marginTop: 'auto' }}>
@@ -46,7 +46,7 @@ const TopBooks = () => {
 
 
 
-          <div className='col-md-4' >
+          <div className='col-md-4 p-2 cabo_s' >
             <div className='book-card' style={{ display: 'flex', justifyContent: 'center' }}>
               <img src={book1} className='img-responsive' alt="book1" style={bookStyleTopBooks} />
               <div style={{ textAlign: 'left', padding: '1vw', marginTop: 'auto' }}>
@@ -69,7 +69,7 @@ const TopBooks = () => {
 
 
 
-          <div className='col-md-4'>
+          <div className='col-md-4 p-2 cabo_s'>
             <div className='book-card' style={{ display: 'flex', justifyContent: 'center' }}>
               <img src={book3} className='img-responsive' alt="book1" style={bookStyleTopBooks} />
               <div style={{ textAlign: 'left', padding: '1vw', marginTop: 'auto' }}>
@@ -90,7 +90,7 @@ const TopBooks = () => {
             </div>
           </div>
 
-          <div className='col-md-4'>
+          <div className='col-md-4 p-2 cabo_s'>
             <div className='book-card' style={{ display: 'flex', justifyContent: 'center' }}>
               <img src={book2} className='img-responsive' alt="book1" style={bookStyleTopBooks} />
               <div style={{ textAlign: 'left', padding: '1vw', marginTop: 'auto' }}>
@@ -113,7 +113,7 @@ const TopBooks = () => {
 
 
 
-          <div className='col-md-4' >
+          <div className='col-md-4 p-2 cabo_s' >
             <div className='book-card' style={{ display: 'flex', justifyContent: 'center' }}>
               <img src={book1} className='img-responsive' alt="book1" style={bookStyleTopBooks} />
               <div style={{ textAlign: 'left', padding: '1vw', marginTop: 'auto' }}>
@@ -136,7 +136,7 @@ const TopBooks = () => {
 
 
 
-          <div className='col-md-4'>
+          <div className='col-md-4 p-2 cabo_s'>
             <div className='book-card' style={{ display: 'flex', justifyContent: 'center' }}>
               <img src={book3} className='img-responsive' alt="book1" style={bookStyleTopBooks} />
               <div style={{ textAlign: 'left', padding: '1vw', marginTop: 'auto' }}>
@@ -162,7 +162,7 @@ const TopBooks = () => {
         </div>
 
         <div className='row pt-5'>
-          <div className='col-md-4'>
+          <div className='col-md-4 p-2 cabo_s'>
             <div className='book-card' style={{ display: 'flex', justifyContent: 'center' }}>
               <img src={book2} className='img-responsive' alt="book1" style={bookStyleTopBooks} />
               <div style={{ textAlign: 'left', padding: '1vw', marginTop: 'auto' }}>
@@ -185,7 +185,7 @@ const TopBooks = () => {
 
 
 
-          <div className='col-md-4' >
+          <div className='col-md-4 p-2 cabo_s' >
             <div className='book-card' style={{ display: 'flex', justifyContent: 'center' }}>
               <img src={book1} className='img-responsive' alt="book1" style={bookStyleTopBooks} />
               <div style={{ textAlign: 'left', padding: '1vw', marginTop: 'auto' }}>
@@ -208,7 +208,7 @@ const TopBooks = () => {
 
 
 
-          <div className='col-md-4'>
+          <div className='col-md-4 p-2 cabo_s'>
             <div className='book-card' style={{ display: 'flex', justifyContent: 'center' }}>
               <img src={book3} className='img-responsive' alt="book1" style={bookStyleTopBooks} />
               <div style={{ textAlign: 'left', padding: '1vw', marginTop: 'auto' }}>
