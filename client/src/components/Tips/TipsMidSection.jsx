@@ -4,6 +4,9 @@ import { NavLink } from 'react-router-dom'
 
 import { GetTips } from '../../redux/actions/tipsAdmin'
 
+import './TipsPage.css'
+
+
 const TipsMidSection = () => {
 
     const imgStyleTipsSection = {
@@ -36,24 +39,23 @@ const TipsMidSection = () => {
 
 
     return (
-        <div className='container flex flex-wrap justify-center gap-4 mb-4 mt-5 pt-3'>
-            <div className="card-deck d-flex flex-wrap justify-content-md-start justify-content-sm-center" style={{}}>
-                {AllTips?.result?.map((tip, index) => (
-                    <div className="card m-2 " style={{flex: '0 0 30%',border:'1px solid #E4B49D', minWidth:'300px',width:'350px!important'}} key={tip._id}>
-                        <img className="card-img-top " src={`${serverURL + tip.image}`} alt="Card image cap" style={imgStyleTipsSection} />
-                        <div className="card-body">
-                            <h5 className="card-title text-center">{tip.title}</h5>
-                            <p className="card-text fw-light" style={{opacity:0.9}}>{tip.shortDescription.substr(0,150)}....</p>
-                            {/* <div dangerouslySetInnerHTML={{ __html: tip.description.substr(0,100) }} /> */}
-                            <NavLink to={`${baseURL}test/${tip._id}`} >  
-                                <button className='mt-3 btn btn-dark'> Read More  </button>
-                            </NavLink>
-                        </div>
-                    </div>
-                ))}
-                
+        <div className='container mt-5 pt-3'>
+    <div className="card-deck tip-page-mid-section">
+        {AllTips?.result?.map((tip, index) => (
+            <div className="card m-2 tip-card" style={{ flex: '0 0 30%', border: '1px solid #E4B49D', maxWidth:"300px" }} key={tip._id}>
+                <img className="card-img-top w-100" src={`${serverURL + tip.image}`} alt="Card image cap" style={imgStyleTipsSection} />
+                <div className="card-body">
+                    <h5 className="card-title text-center">{tip.title}</h5>
+                    <p className="card-text fw-light" style={{ opacity: 0.9 }}>{tip.shortDescription.substr(0, 150)}....</p>
+                    <NavLink to={`${baseURL}test/${tip._id}`}>
+                        <button className='mt-3 btn btn-dark'> Read More </button>
+                    </NavLink>
+                </div>
             </div>
-        </div>
+        ))}
+    </div>
+</div>
+
     )
 }
 
