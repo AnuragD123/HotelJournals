@@ -12,7 +12,13 @@ const cardImageStyle = {
     height: '200px',
 };
 
+
+
+
+
 const Cards = () => {
+
+    
     const dispatch = useDispatch();
 
     useEffect(() => {
@@ -80,8 +86,9 @@ const Cards = () => {
                                             <h6 className="card-title" style={{ fontWeight: 'bold' }}>
                                                 {course.title}
                                             </h6>
-                                            <p className="card-text" style={{ opacity: 0.9, fontSize: "12px" }}>
-                                                {course.description.substr(0, 180)}...
+                                            <p className="card-text" style={{ opacity: 0.9, fontSize: "16px!important" }}>
+                                    
+                                                {course.description.substr(0, 150)}...
                                             </p>
                                         </div>
 
