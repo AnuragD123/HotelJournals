@@ -275,12 +275,16 @@ import { signup } from '../../redux/actions/auth';
 import './InputLabelAnimation.css';
 import Carousel from './Carousel';
 
+import PhoneInput from 'react-phone-number-input';
+import 'react-phone-number-input/style.css';
+
 const Signup = () => {
     const messagebackend = useSelector((state) => state.authReducer.message);
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [phoneNumber, setPhoneNumber] = useState();
     const dispatch = useDispatch();
 
     useEffect(() => {
@@ -350,7 +354,7 @@ const Signup = () => {
                         }}
                     >
                         <Img
-                        className='LogoImg'
+                            className='LogoImg'
                             src={Unstop}
                             alt="unstopablePhoto"
                         />
@@ -466,14 +470,21 @@ const Signup = () => {
                                 <label>User Name</label>
                             </div>
                             <div class="input-field">
-                                <input
+                                {/* <input
                                     style={{ width: '100%' }}
                                     type="text"
                                     required
                                     spellCheck="false"
-                                    autoComplete="off"
+                                    autoComplete="off" 
+                                />*/}
+                                <PhoneInput
+                                    international
+                                    defaultCountry="US"
+                                    value={phoneNumber}
+                                    onChange={setPhoneNumber}
+                                    placeholder="Phone"
                                 />
-                                <label>Phone</label>
+                                {/* <label>Phone</label> */}
                             </div>
                             <Flex style={{ width: '100%' }} className='password-container'>
                                 <div class="input-field">
