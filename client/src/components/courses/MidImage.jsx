@@ -60,7 +60,7 @@ const MidImage = () => {
                     {/* <div className={CSS.imageClass}>
             <img src={course_heading} style={mountImgStyle} alt='mountain' className='' />
           </div> */}
-                    <Cards />
+                    <Cards filter={true} />
                 </Flex>
             </div>
         </div>

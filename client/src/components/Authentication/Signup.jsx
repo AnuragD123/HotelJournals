@@ -268,6 +268,7 @@ import {
     Img,
     Button,
     Grid,
+    transition,
 } from '@chakra-ui/react';
 import { useDispatch, useSelector } from 'react-redux';
 import Unstop from '../../assets/img/Unstop.svg';
@@ -285,6 +286,7 @@ const Signup = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [phoneNumber, setPhoneNumber] = useState();
+    const [selectType, setSelectType] = useState();
     const dispatch = useDispatch();
 
     useEffect(() => {
@@ -319,7 +321,6 @@ const Signup = () => {
         }
         return true;
     };
-
     return (
         <div
             className="signup"
@@ -382,6 +383,8 @@ const Signup = () => {
                             mt={{ base: '1rem', md: 0 }} // Add top margin on small screens
                         >
                             <Button
+                                style={{ border: selectType != "Candidate" ? "2px dotted #7f7f7f" : "2px solid #cc341f", color: selectType != "Candidate" ? "#000" : "#cc341f", borderRadius: "25px 25px 25px 25px", transition: "all 0.3s linear" }}
+                                onClick={() => setSelectType("Candidate")}
                                 variant="outline"
                                 borderColor="#ff7f6eff"
                                 color="#000"
@@ -394,6 +397,8 @@ const Signup = () => {
                                 Candidate
                             </Button>
                             <Button
+                                style={{ border: selectType != "Recruiter" ? "2px dotted #7f7f7f" : "2px solid #cc341f", color: selectType != "Recruiter" ? "#000" : "#cc341f", borderRadius: "25px 25px 25px 25px", transition: "all 0.3s linear" }}
+                                onClick={() => setSelectType("Recruiter")}
                                 variant="outline"
                                 borderColor="#ff7f6eff"
                                 fontSize="15px"
@@ -406,6 +411,8 @@ const Signup = () => {
                                 Recruiter
                             </Button>
                             <Button
+                                style={{ border: selectType != "Organiser" ? "2px dotted #7f7f7f" : "2px solid #cc341f", color: selectType != "Organiser" ? "#000" : "#cc341f", borderRadius: "25px 25px 25px 25px", transition: "all 0.3s linear" }}
+                                onClick={() => setSelectType("Organiser")}
                                 variant="outline"
                                 borderColor="#ff7f6eff"
                                 fontSize="15px"
@@ -538,7 +545,7 @@ const Signup = () => {
                         </NavLink>
                     </form>
                 </Flex>
-            </Flex>
+            </Flex >
         </div >
     );
 };
