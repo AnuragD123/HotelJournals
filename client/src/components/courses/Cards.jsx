@@ -13,9 +13,6 @@ const cardImageStyle = {
 };
 
 
-
-
-
 const Cards = ({ filter }) => {
 
 
@@ -80,7 +77,7 @@ const Cards = ({ filter }) => {
                 <div className="container mt-5 col">
                     <div className={CSS.cardContainer} >
                         {AllCoursesData?.result?.map((course, index) => (
-                            <div className="" key={course._id} style={{}}>
+                            <div className="" key={course._id} style={{minWidth:""}}>
                                 <div className="card" style={{ border: '1px solid #E4B49D' }}>
                                     <img className="card-img-top" src={`${course.banner_image}`} alt="CardImageCap" style={cardImageStyle} />
                                     <div className="card-body" style={{ padding: "10px" }}>
@@ -89,7 +86,7 @@ const Cards = ({ filter }) => {
                                                 {course.title}
                                             </h6>
                                             <p className="card-text" style={{ opacity: 0.9, fontSize: "16px!important" }}>
-
+                                    
                                                 {course.description.substr(0, 150)}...
                                             </p>
                                         </div>

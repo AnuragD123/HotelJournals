@@ -74,39 +74,37 @@ const CourseDescription = () => {
                     </button>
                   </NavLink>
                 </div>
+
+                {/* Course details section: time, language..etc */}
+
                 <div className="row mt-2 mb-3 justify-content-around p-4">
-                  <div className="col-md-2 text-center border border-dark rounded p-2 " style={{ background: '#F5F6FB', minWidth: '140px', height: 'fit-content' }}>
+                  <div className="col-md-2 text-center border border-dark rounded p-2 " style={{ background: '#F5F6FB', minWidth:'140px', height:'fit-content' }}>
                     <div className="col" style={{ opacity: 0.7 }}><TbLanguageHiragana size={20} alignmentBaseline='' /> </div>
                     <div className="col" style={{ opacity: 0.7, fontSize: '15px' }}> <small> Languages </small> </div>
                     <div className="col" > <small> {course?.result?.languages}   </small> </div>
                   </div>
-                  <div className="col-md-2 text-center border border-dark rounded p-2 " style={{ background: '#F5F6FB', minWidth: '140px', height: 'fit-content' }}>
+                  <div className="col-md-2 text-center border border-dark rounded p-2 " style={{ background: '#F5F6FB' , minWidth:'140px', height:'fit-content'  }}>
                     <div className="col" style={{ opacity: 0.7 }}><CgSandClock size={20} alignmentBaseline='' /> </div>
                     <div className="col" style={{ opacity: 0.7, fontSize: '15px' }}> <small> Duration </small> </div>
                     <div className="col"><small> {course?.result?.duration} </small> </div>
                   </div>
-                  <div className="col-md-2 text-center border border-dark rounded p-2 " style={{ background: '#F5F6FB', minWidth: '140px', height: 'fit-content' }}>
+                  <div className="col-md-2 text-center border border-dark rounded p-2 " style={{ background: '#F5F6FB' , minWidth:'140px', height:'fit-content'  }}>
                     <div className="col" style={{ opacity: 0.7 }}><FaArrowUpRightDots size={20} alignmentBaseline='' /> </div>
                     <div className="col" style={{ opacity: 0.7, fontSize: '15px' }}> <small> Difficulty </small> </div>
                     <div className="col"><small> {course?.result?.difficulty} </small> </div>
                   </div>
-                  <div className="col-md-2 text-center border border-dark rounded p-2 " style={{ background: '#F5F6FB', minWidth: '140px', height: 'fit-content' }}>
+                  <div className="col-md-2 text-center border border-dark rounded p-2 " style={{ background: '#F5F6FB' , minWidth:'140px', height:'fit-content' }}>
                     <div className="col" style={{ opacity: 0.7 }}><IoIosRocket size={20} alignmentBaseline='' /> </div>
                     <div className="col" style={{ opacity: 0.7, fontSize: '15px' }}> <small> Format </small> </div>
                     <div className="col"><small> {course?.result?.format} </small> </div>
                   </div>
-                  {
-                    course?.result?.isFree ? (<div className='text-left rounded' style={{ position: 'absolute', top: 10, right: 0, background: 'green', color: 'white', padding: '10px', paddingLeft: '100px' }}>
+                  {course?.result?.isFree ? (
+                    <div className='text-left rounded' style={{ position: 'absolute', top: 10, right: 0, background: 'green', color: 'white', padding: '10px', paddingLeft: '100px' }}>
                       Free
-                    </div>) : (
-                      // <div className='text-left rounded' style={{ position: 'absolute', top: 10, right: 0, background: 'green', color: 'white', padding: '10px', paddingLeft: '100px' }}>
-                      //   {course.price}
-                      // </div>
-                      <></>
-                    )
-                  }
-
+                    </div>
+                  ) : null}
                 </div>
+                {/* *****End of Course details section***** */}
 
               </div>
             </div>
