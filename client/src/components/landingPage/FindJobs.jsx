@@ -1,17 +1,18 @@
 import React from 'react';
 import GirlImg from '../../assets/img/author.jpg';
 import 'animate.css';
+import './FindJobs.css'
 
 const FindJobs = () => {
   return (
     <div className='mt-5'>
-      <div className="row m-0 pt-4 pb-4 w-100 justify-content-sm-center" style={{ background: '#EBECE6' }}>
-        <div className="col-md-6 col-sm-12" style={{ minWidth: "50%" }}>
+      <div className="row m-0 pt-4 pb-4 w-100 justify-content-sm-center FJo1" style={{ background: '#EBECE6' }}>
+        <div className="col-md-6 col-sm-12 FJoC" style={{ minWidth: "50%" }}>
           <div className="card">
             <img src={GirlImg} className="img-fluid" alt="job_man" />
           </div>
         </div>
-        <div className='col-md-6 col-sm-12 pt-5 pl-5 pr-5'>
+        <div className='col-md-6 col-sm-12 pt-5 pl-5 pr-5 FJoC'>
           <p> CONOCEME  </p>
           <h1 className="card-title text-dark" > De turismóloga a fundadora de una marca para profesionales del turismo  </h1>
           <p className='mt-4' style={{ textAlign: 'justify' }} >

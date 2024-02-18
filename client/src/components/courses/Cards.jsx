@@ -13,9 +13,9 @@ const cardImageStyle = {
 };
 
 
-const Cards = () => {
+const Cards = ({ filter }) => {
 
-    
+
     const dispatch = useDispatch();
 
     useEffect(() => {
@@ -28,48 +28,50 @@ const Cards = () => {
     return (
         <div className=' container'>
             <div className='row'>
-                <div className={`${CSS.filterBox} col`} style={{ maxWidth: "20rem" }}>
-                    <div>
-                        <h5>FILTER BY</h5>
+                {filter ?
+                    <div className={`${CSS.filterBox} col`} style={{ maxWidth: "20rem" }}>
                         <div>
-                            <div className="ml-2 pb-3">
-                                <hr style={{ background: "#E4B49D" }} />
+                            <h5>FILTER BY</h5>
+                            <div>
+                                <div className="ml-2 pb-3">
+                                    <hr style={{ background: "#E4B49D" }} />
 
-                                <h6 className="font-weight-bold">Course Types</h6>
-                                <div className="ml-3">
-                                    <CheckBox content={"Bachelors"} />
-                                    <CheckBox content={"Masters"} />
-                                    <CheckBox content={"Professionals"} />
-                                    <CheckBox content={"Shorts"} />
-                                </div>
+                                    <h6 className="font-weight-bold">Course Types</h6>
+                                    <div className="ml-3">
+                                        <CheckBox content={"Bachelors"} />
+                                        <CheckBox content={"Masters"} />
+                                        <CheckBox content={"Professionals"} />
+                                        <CheckBox content={"Shorts"} />
+                                    </div>
 
-                                <h6 className="font-weight-bold mt-3">Course Languages</h6>
-                                <div className="ml-3">
-                                    <CheckBox content={"English"} />
-                                    <CheckBox content={"Spanish"} />
-                                    <CheckBox content={"French"} />
-                                    <CheckBox content={"Italian"} />
-                                    <CheckBox content={"Portuguese"} />
-                                    <CheckBox content={"German"} />
-                                </div>
+                                    <h6 className="font-weight-bold mt-3">Course Languages</h6>
+                                    <div className="ml-3">
+                                        <CheckBox content={"English"} />
+                                        <CheckBox content={"Spanish"} />
+                                        <CheckBox content={"French"} />
+                                        <CheckBox content={"Italian"} />
+                                        <CheckBox content={"Portuguese"} />
+                                        <CheckBox content={"German"} />
+                                    </div>
 
-                                <h6 className="font-weight-bold mt-3">Categories</h6>
-                                <div className="ml-3">
-                                    <CheckBox content={"Web Development"} />
-                                    <CheckBox content={"Data Science"} />
-                                    <CheckBox content={"Machine Learning"} />
-                                    <CheckBox content={"Mobile App Development"} />
-                                    <CheckBox content={"Cybersecurity"} />
-                                    <CheckBox content={"Digital Marketing"} />
-                                    <CheckBox content={"Sales and Marketing"} />
-                                    <CheckBox content={"Spa"} />
-                                    <CheckBox content={"Tourism"} />
-                                    <CheckBox content={"Business Skills"} />
+                                    <h6 className="font-weight-bold mt-3">Categories</h6>
+                                    <div className="ml-3">
+                                        <CheckBox content={"Web Development"} />
+                                        <CheckBox content={"Data Science"} />
+                                        <CheckBox content={"Machine Learning"} />
+                                        <CheckBox content={"Mobile App Development"} />
+                                        <CheckBox content={"Cybersecurity"} />
+                                        <CheckBox content={"Digital Marketing"} />
+                                        <CheckBox content={"Sales and Marketing"} />
+                                        <CheckBox content={"Spa"} />
+                                        <CheckBox content={"Tourism"} />
+                                        <CheckBox content={"Business Skills"} />
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </div> : null
+                }
 
 
                 <div className="container mt-5 col">
@@ -83,9 +85,9 @@ const Cards = () => {
                                             <h6 className="card-title" style={{ fontWeight: 'bold' }}>
                                                 {course.title}
                                             </h6>
-                                            <p className="card-text" style={{ opacity: 0.9, fontSize: "14px!important" }}>
+                                            <p className="card-text" style={{ opacity: 0.9, fontSize: "16px!important" }}>
                                     
-                                                {course.description.substr(0, 120)}...
+                                                {course.description.substr(0, 150)}...
                                             </p>
                                         </div>
 
